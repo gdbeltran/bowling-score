@@ -1,4 +1,4 @@
-class Frame:
+class BowlFrame:
     def __init__(self, ball1, ball2, ball3=0, third_ball=False):
         self.ball1 = ball1
         self.ball2 = ball2

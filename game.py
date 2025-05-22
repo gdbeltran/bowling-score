@@ -1,8 +1,8 @@
-from frame import Frame
+from bowl_frame import BowlFrame
 from enter import enter_score, enter_ball3
 
 def game():
-    frames = [Frame(0, 0) for _ in range(10)]
+    frames = [BowlFrame(0, 0) for _ in range(10)]
     for idx, frame in enumerate(frames):
         print(f"Frame {idx + 1}:")
         if idx == 9:
