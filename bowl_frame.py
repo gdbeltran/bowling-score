@@ -5,6 +5,7 @@ class BowlFrame:
         self.ball3 = ball3
         self.third_ball = third_ball
         self.score = 0
+        self.running_total = 0
 
     def sum(self):
         return self.ball1 + self.ball2 + self.ball3
