@@ -1,20 +1,14 @@
-from game import game
+from tkinter import ttk, messagebox
+from window import game_window
 
 def main():
     print("Welcome to the Bowling Score Tracker!")
-    print("Game 1:")
-    game1 = game()
-    print(f"Game 1 score: {game1}")
-    print("Game 2:")
-    game2 = game()
-    print(f"Game 2 score: {game2}")
-    print("Game 3:")
-    game3 = game()
-    print(f"Game 3 score: {game3}")
+    game1 = game_window(1)
+    game2 = game_window(2)
+    game3 = game_window(3)
     series = game1 + game2 + game3
-    print(f"Series: {series}")
     average = series / 3
-    print(f"Average: {average:.2f}")
+    messagebox.showinfo("Bowling Score Tracker", f"Game 1: {game1}\nGame 2: {game2}\nGame 3: {game3}\nSeries: {series}\nAverage: {average:.2f}")
 
     return
 
